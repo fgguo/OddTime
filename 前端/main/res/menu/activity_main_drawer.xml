@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <!--所有菜单选项为单选-->
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/huodonglishi"
+            android:title="活动历史" />
+
+    </group>
+    <item android:title="其他">
+        <menu>
+
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="帮助" />
+            <item
+                android:id="@+id/nav_manage"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="设置" />
+        </menu>
+    </item>
+
+</menu>

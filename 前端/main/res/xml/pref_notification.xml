@@ -1,0 +1,41 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <PreferenceCategory android:title="通知">
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="notifications_new_message"
+        android:title="接收新消息通知" />
+        <SwitchPreference
+            android:dependency="notifications_new_message"
+            android:defaultValue="false"
+            android:key="aass"
+            android:title="只接受任务信息" />
+        <SwitchPreference
+            android:dependency="notifications_new_message"
+            android:defaultValue="false"
+            android:key="ssdd"
+            android:title="只接受好友消息" />
+</PreferenceCategory>
+    <PreferenceCategory android:title="提示">
+    <SwitchPreference
+        android:dependency="notifications_new_message"
+        android:defaultValue="true"
+        android:key="ddff"
+        android:title="声音" />
+    <ListPreference
+        android:dependency="ddff"
+        android:key="choicemusic"
+        android:title="新消息提示音"
+        android:summary="点击设置提示音"
+        android:dialogTitle="请选择提示音"
+        android:entries="@array/cities"
+        android:entryValues="@array/cities"/>
+    <!-- NOTE: This preference will be enabled only when the checkbox above is checked. -->
+    <SwitchPreference
+        android:dependency="notifications_new_message"
+        android:defaultValue="false"
+        android:key="ffgg"
+        android:title="震动" />
+
+</PreferenceCategory>
+</PreferenceScreen>

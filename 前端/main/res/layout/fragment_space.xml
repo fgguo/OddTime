@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F3F6"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <RelativeLayout
+            android:id="@+id/start"
+            android:layout_width="match_parent"
+            android:layout_height="110sp"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_alignParentLeft="true"
+                android:id="@+id/facephoto"
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/nav_icon"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"/>
+            <TextView
+                android:layout_below="@+id/facephoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textSize="10sp"
+                android:text="点击修改头像"/>
+
+            <LinearLayout
+                android:layout_toEndOf="@+id/facephoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/netname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="30dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#ccc"/>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_marginTop="10dp"
+      android:padding="1px"
+      android:background="@drawable/bg_layout_shape">
+    <LinearLayout
+        android:id="@+id/jianjie"
+        style="@style/mid_layout"
+        >
+        <ImageView
+            style="@style/img_smallicon"
+            android:src="@drawable/person_qianming" />
+
+        <TextView style="@style/usertext" android:text="  个人简介：" />
+        <TextView
+            android:id="@+id/briftext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="868.66"/>
+
+        <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+
+          <View style="@style/bg_line" />
+
+      <LinearLayout style="@style/mid_layout"
+          android:id="@+id/cradit">
+
+          <ImageView
+             style="@style/img_smallicon"
+              android:src="@drawable/xinyu_tubiao" />
+
+          <TextView
+              style="@style/usertext"
+              android:text="  信誉" />
+
+          <ImageView style="@style/img_arrow" />
+      </LinearLayout>
+      <View style="@style/bg_line" />
+      <LinearLayout style="@style/mid_layout"
+          android:id="@+id/lingshii">
+          <ImageView
+              style="@style/img_smallicon"
+              android:src="@drawable/free_time_icon" />
+
+          <TextView style="@style/usertext" android:text="  本周零时" />
+          <TextView
+              android:id="@+id/lingshi1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="9.80"/>
+          <ImageView style="@style/img_arrow"/>
+      </LinearLayout>
+      <View style="@style/bg_line" />
+      <LinearLayout style="@style/mid_layout"
+          android:id="@+id/myskill">
+          <ImageView
+              style="@style/img_smallicon"
+              android:src="@drawable/shanchangjineng2" />
+
+          <TextView style="@style/usertext" android:text="  我的技能" />
+          <ImageView style="@style/img_arrow" />
+      </LinearLayout>
+      <View style="@style/bg_line" />
+      <LinearLayout
+          android:id="@+id/gengduoziliao"
+          style="@style/mid_layout">
+          <ImageView
+              style="@style/img_smallicon"
+              android:src="@drawable/gengduoziliao_tubiao" />
+
+          <TextView
+              android:id="@+id/textView"
+              style="@style/usertext"
+              android:text="  更多资料" />
+
+          <ImageView style="@style/img_arrow"/>
+      </LinearLayout>
+</LinearLayout>
+</LinearLayout>
+

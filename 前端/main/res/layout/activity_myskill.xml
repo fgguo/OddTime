@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#9fa0a0">
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/back_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/fabubotton"
+            android:layout_alignTop="@+id/back_button"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_toEndOf="@+id/back_button"
+            android:layout_toRightOf="@+id/back_button"
+            android:text="我的技能"
+            android:textColor="#fff"
+            android:textSize="23sp" />
+
+        <Button
+            android:id="@+id/fabubotton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="确定"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout style="@style/wrap_layout" >
+        <!-- 上圆角-->
+        <LinearLayout style="@style/base_layout"
+            >
+            <TextView style="@style/usertext" android:text="个人技能1：" />
+            <EditText
+                android:id="@+id/ed1"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_weight="211"
+                android:background="@color/white"/>
+        </LinearLayout>
+        <!-- 分割线 -->
+        <View style="@style/bg_line"/>
+        <!-- 无圆角-->
+        <LinearLayout style="@style/base_layout">
+            <TextView style="@style/usertext" android:text="个人技能2：" />
+            <EditText
+                android:id="@+id/ed2"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_weight="211"
+                android:background="@color/white"/>
+        </LinearLayout>
+        <!-- 分割线 -->
+        <View style="@style/bg_line"/>
+        <!-- 无圆角-->
+        <LinearLayout style="@style/base_layout">
+            <TextView style="@style/usertext" android:text="个人技能3：" />
+            <EditText
+                android:id="@+id/ed3"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_weight="211"
+                android:background="@color/white"/>
+        </LinearLayout>
+        <View style="@style/bg_line"/>
+        <!-- 下圆角-->
+        <LinearLayout style="@style/base_layout">
+            <TextView style="@style/usertext" android:text="个人技能4：" />
+            <EditText
+                android:id="@+id/ed4"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_weight="211"
+                android:background="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
